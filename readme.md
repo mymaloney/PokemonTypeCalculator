@@ -1,32 +1,5 @@
-Requirements:
-Python
+No Requirements! Just download the whole repository, extract it, then run "launcher.exe". That's it!
 
-If you do not have python, you can install it on Windows by opening the command line and entering the following lines
+This calculator allows you to input a custom type chart, check for defensive weaknesses in your team, check for offensive weaknesses in your team, and suggests types to add to your team to cover those weaknesses.
 
-	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-	python get-pip.py
-	pip python
-
-Once python has finished installing, navigate to the folder where you unzipped the contents of this file with
-
-	cd (filepath)
-
-and then enter
-
-	python input.py
-
-From there, you'll be asked to input your type chart. Make sure to use only lowercase letters and divide multiple types by a comma and a space. For instance,
-
-	fire, water, grass, normal,
-
-Once you're done with inputting your chart, you can run the attack calculator by running the following line in command line.
-
-	python attack.py
-
-Likewise, you can run the defense calculator by running
-
-	python defend.py
-	
-Alternatively, you may run the program without first inputting your own type chart. If you do, the default gen 9 type chart will be used instead.
-
-Feel free to share or edit these programs as you see fit.
+If you run the program without setting a custom type chart first, the program will use the Gen 9 type chart.

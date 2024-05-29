@@ -39,8 +39,7 @@ def format_chart(chart):
     formatted_chart += "}\n"
     return formatted_chart
 
-def update_typecalc(new_chart):
-    file_path = 'typecalc.py'
+def update_file(file_path, new_chart):
     with open(file_path, 'r') as file:
         lines = file.readlines()
 
@@ -54,7 +53,7 @@ def update_typecalc(new_chart):
             break
 
     if start_idx is None or end_idx is None:
-        print("Error: Could not find type_chart in typecalc.py")
+        print(f"Error: Could not find type_chart in {file_path}")
         return
 
     new_chart_str = format_chart(new_chart)
@@ -63,7 +62,11 @@ def update_typecalc(new_chart):
     with open(file_path, 'w') as file:
         file.writelines(updated_lines)
 
-    print("type_chart successfully updated in typecalc.py")
+    print(f"type_chart successfully updated in {file_path}")
+
+def update_type_charts(new_chart):
+    update_file('attack.py', new_chart)
+    update_file('defend.py', new_chart)
 
 def main():
     types = get_types()
@@ -72,7 +75,7 @@ def main():
         return
 
     type_chart = get_effectiveness(types)
-    update_typecalc(type_chart)
+    update_type_charts(type_chart)
 
 if __name__ == "__main__":
     main()

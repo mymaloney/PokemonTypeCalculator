@@ -19,9 +19,13 @@ From there, you'll be asked to input your type chart. Make sure to use only lowe
 
 	fire, water, grass, normal,
 
-Once you're done with inputting your chart, you can run the calculator by running the following line in command line.
+Once you're done with inputting your chart, you can run the attack calculator by running the following line in command line.
 
-	python typecalc.py
+	python attack.py
+
+Likewise, you can run the defense calculator by running
+
+	python defend.py
 	
 Alternatively, you may run the program without first inputting your own type chart. If you do, the default gen 9 type chart will be used instead.
 
